@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<!--[if IE 6]>
+<html id="ie6" dir="ltr" lang="en-US">
+<![endif]-->
+<!--[if IE 7]>
+<html id="ie7" dir="ltr" lang="en-US">
+<![endif]-->
+<!--[if IE 8]>
+<html id="ie8" dir="ltr" lang="en-US">
+<![endif]-->
+<!--[if !(IE 6) | !(IE 7) | !(IE 8)  ]><!-->
+<html dir="ltr" lang="en-US">
+<!--<![endif]-->
+    <head>
+        <meta name="robots" content="noindex, nofollow">
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1"/>
+        <title>Hydrogen by Jason Rundell</title>
+        <!--[if IE]>
+        <style> @import url(http://fonts.googleapis.com/css?family=Tinos); </style>
+        <![endif]-->
+        <link rel="stylesheet/less" type="text/css" href="assets/css/style.less">
+		<!--[if lt IE 9]>
+			<script src="http://html5shim.googlecode.com/svn/trunk/html5.js"></script>
+		<![endif]-->
+        <script src="assets/js/less-1.3.0.min.js"></script>
+
+        <link rel="shortcut icon" href="assets/images/favicon.ico">
+    </head>
+    <body>
+
+    <div class="wrap">
+        <div class="base container">
+
+            <header class="sixteen columns clearfix">
+                <h1 id="nav-logo"><a href="http://jasonrundell.com/projects/hydrogen">Hydrogen</a></h1>
+                <h2 class="mbl">Free, responsive, one page, web design</h2>
+            </header>
+
+            <div class="sixteen columns clearfix" class="mbm"><p class="line"></p></div>
+
+            <div class="ten columns tal">
+
+                <img src="http://placehold.it/580x210&text=width+responsive" alt="placeholder image" class="full">
+
+                <h3>Ac ridiculus lorem enim</h3>
+                <p>Pulvinar cras, massa. Lacus adipiscing sagittis est dolor ridiculus et tempor. Placerat ac ut nunc dolor tincidunt, nascetur, augue, augue placerat a enim nec cras augue urna cras in. Ac sed lundium eros duis! Diam tincidunt cras hac egestas? Vel porttitor, facilisis tortor duis purus dictumst, pulvinar, urna vel.</p>
+
+                <h3>Proin sed ultrices pellentesque tristique</h3>
+                <ul class="list">
+                    <li>Pulvinar sed adipiscing, enim mauris, arcu etiam scelerisque tincidunt</li>
+                    <li>Vel elementum ut integer lectus quis nunc in auctor lacus elit porttitor</li>
+                    <li>Auctor tempor nunc! Amet, lundium, rhoncus non, cursus dapibus non mauris</li>
+                    <li>Tortor sit quis tortor tristique sed parturient mus tortor amet mus pulvinar</li>
+                </ul>
+
+            </div>
+
+            <div class="six columns mbl" id="signup">
+
+                <div class="inner">
+                    <h2>Sign up for email updates</h2>
+
+                    <p>Join our update list to get free and fresh news. Your privacy &amp; email address are safe with me!</p>
+                    <form method="post" action="submit.php" id="signup-form">
+                        <input type="text" value="Email address" class="box field" id="subbox" onfocus="if ( this.value == 'Email address') { this.value = ''; }" onblur="if ( this.value == '' ) { this.value = 'Email address'; }" name="email">
+                        <input type="hidden" name="event" value="signup">
+                        <input type="submit" value="Sign Up" id="signup-button">
+                        <div id="signup-response" class="disno"></div>
+                    </form>
+
+                </div>
+
+            </div>
+            <div class="six columns">
+                <h3>Get in touch</h3>
+                <p>Phone: <a href="tel:0005551234">(000) 555 1234</a><br>
+                Email: <script>document.write('<a href="ma' + 'ilt' + 'o:emai' + 'l@dom' + 'ain' + '.' + 'com">'); document.write('emai' + 'l@dom' + 'ain' + '.' + 'com</a>');</script></p>
+
+                <form action="submit.php" id="contact-form" method="post">
+                    <input type="hidden" name="event" value="contact">
+                    <ul class="contactform">
+                        <li>
+                            <input type="text" name="name" id="name" value="Name" class="box field" onfocus="if ( this.value == 'Name') { this.value = ''; }" onblur="if ( this.value == '' ) { this.value = 'Name'; }">
+                            <div id="name-response" class="disno"></div>
+                        </li>
+
+                        <li>
+                            <input type="text" name="email" id="email" value="Email" class="box field" onfocus="if ( this.value == 'Email') { this.value = ''; }" onblur="if ( this.value == '' ) { this.value = 'Email'; }">
+                            <div id="email-response" class="disno"></div>
+                        </li>
+
+                        <li class="textarea">
+                            <textarea name="message" id="message" rows="20" cols="30" class="box field" onfocus="if ( this.value == 'Message') { this.value = ''; }" onblur="if ( this.value == '' ) { this.value = 'Message'; }">Message</textarea>
+                            <div id="message-response" class="disno"></div>
+                        </li>
+
+                        <li>
+                            <input name="submit" class="button btn-2nd" type="submit" id="contact-button" value="Send Email &rsaquo;" >
+                        </li>
+
+                    </ul>
+                    <div id="contact-response" class="disno"></div>
+
+                </form>
+                </div>
+            <div class="sixteen columns clearfix"></div>
+
+        </div>
+    </div>
+
+    <footer>
+        <div class="container">
+            <p id="copyright">&copy; 2012 <a href="http://jasonrundell.com/projects/hydrogen">Hydrogen</a> by Jason Rundell</p>
+        </div>
+    </footer>
+
+    <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.7.2/jquery.min.js"></script>
+    <script src="assets/js/validate.js"></script>
+    <script src="assets/js/respond.min.js"></script>
+
+    <script type="text/javascript">
+
+      var _gaq = _gaq || [];
+      _gaq.push(['_setAccount', 'UA-XXXXXX-X']);
+      _gaq.push(['_setDomainName', '.domain.com']);
+      _gaq.push(['_trackPageview']);
+
+      (function() {
+        var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+        ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+        var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+      })();
+
+    </script>
+
+</body>
+</html>

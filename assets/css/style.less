@@ -1,0 +1,309 @@
+/* LESS Variables */
+@font-prime:'Tinos', serif;
+@font-base:sans-serif;
+
+@color-light:#EDF2F8;
+@color-dark:#2E2E2E;
+@color-shadow:#d5d5d5;
+@color-bright:#9FBFDF;
+@color-error:#990000;
+@color-shine:#DFDF9F;
+
+/*  0.	Reset & Basics --*/
+html, body, div, span, applet, object, iframe, h1, h2, h3, h4, h5, h6, p, blockquote, pre, a, abbr, acronym, address, big, cite, code, del, dfn, em, font, img, ins, kbd, q, s, samp, small, strike, strong, sub, sup, tt, var, b, u, i, center, dl, dt, dd, ol, ul, li, fieldset, form, label, legend, table, caption, tbody, tfoot, thead, tr, th, td { margin: 0; padding: 0; border: 0; outline: 0; font-size: 100%; vertical-align: baseline; background: transparent; } body { line-height: 1; } ol, ul { list-style: none; } blockquote, q { quotes: none; } blockquote:before, blockquote:after, q:before, q:after { content: ''; content: none; } :focus { outline: 0; } ins { text-decoration: none; } del { text-decoration: line-through; } table { border-collapse: collapse; border-spacing: 0; }
+.clearfix:after { content: "."; display: block; height: 0; clear: both; visibility: hidden; }.clearfix { display: inline-block; }/* Hide from IE Mac */.clearfix { display: block; }/* End hide from IE Mac */.none { display: none; }/* End Clearfix */
+
+@font-face {
+  font-family: 'Tinos';
+  font-style: normal;
+  font-weight: 700;
+  src: url('../fonts/Tinos-Regular.ttf');
+}
+
+/*  0.1 Document Setup */
+body,input,textarea {font: 12px @font-base;border: none;}
+body{background:url(../images/dashes-bg.png) @color-bright;overflow-x: hidden;}
+input,textarea{border: 1px solid;}
+a {padding: 0 1px;margin: 0 -1px;text-decoration: none;color: @color-dark;}
+p,pre,ul,ol,dl,dd,blockquote,address,table,fieldset,form,.post-thumb,.author-bio{margin-bottom:20px;}
+
+.wrap{background:url(../images/background-fill.jpg) @color-light;}
+.disno{display:none;}
+.base.container{margin-top: 5px;padding:45px 0;background:url(../images/background-fill.jpg) @color-light;}
+img.full{width:100%;}
+.alignleft { float: left; }
+.alignright { float: right; }
+.aligncenter {margin-left: auto !important;margin-right: auto !important;display: block !important;clear: both !important;float: none !important;}
+.clear {clear: both;display: block;font-size: 0;height: 0;line-height: 0;width:100%;}
+h1,h2,h3,h4,h5,h6 {font-family: @font-prime;padding: 0;}
+h1 {font-size: 5em;line-height: 1em;}
+h2 {font-size: 2em;line-height: 1.4em;}
+h3 {font-size: 2em;line-height: 1.8em;}
+h4 {font-size: 1em;line-height: 0.9em;}
+.line { border-top: 1px solid @color-shadow; }
+header {display: block;border-bottom: 1px solid;}
+.mln{margin-left:0;}
+.mbl{margin-bottom:20px;}
+.mbm{margin-bottom:10px;}
+
+/* css3 animation */
+a{-webkit-transition: all 0.3s ease 0s;-moz-transition: all 0.3s ease 0s;-o-transition: all 0.3s ease 0s;-ms-transition: all 0.3s ease 0s;transition: all 0.3s ease 0s;}
+
+/*  02. Document Style */
+address { font-style: italic; }
+abbr[title],acronym[title],dfn[title] {cursor: help;border-bottom: 1px dotted #666;}
+blockquote {margin: 10px 5% 20px 5%;padding: 3px 0 0 30px;font-style: inherit;font-size: 14px;line-height: 23px;}
+blockquote p{ margin: 0; }
+strong { font-weight: bolder; }
+em,dfn,cite { font-style: italic; }
+dfn{ font-weight: bold; }
+sup {font-size: 12px;vertical-align: top;}
+sub {font-size: 12px;vertical-align: bottom;}
+small { font-size: 10px; }
+del { text-decoration: line-through; }
+ins { text-decoration: underline; }
+var,kbd,samp,code,pre { font: 12px/18px Consolas, "Andale Mono", Courier, "Courier New", monospace; }
+kbd { font-weight: bold; }
+samp,var { font-style: italic; }
+pre {white-space: pre;overflow: auto;padding:  0 10px;line-height: 19px;font-size: 11px;clear: both;}
+code { padding: 3px 5px; }
+ul{ margin-left: 30px; }
+caption { text-align: left; }
+.top-welcome {padding: 30px 0 25px 0;}
+.top-welcome h2{line-height: 35px;font-size: 22px;line-height: 34px;text-align: center;}
+.top-heading {padding: 20px 0 15px 0;}
+.top-heading h2{line-height: 35px;font-size: 24px;line-height: 34px;}
+input,textarea { padding: 6px 13px 5px 13px; }
+button {padding: 2px 10px;cursor: pointer;}
+ul{list-style:disc;}
+p,li{font-size:1.2em;line-height:1.5em;}
+
+/* skeleton */
+/* #Base 960 Grid */
+.container                                  { position: relative; width: 960px; margin: 0 auto; padding: 0; }
+.column, .columns                           { float: left; display: inline; margin-left: 10px; margin-right: 10px; }
+.row                                        { margin-bottom: 20px; }
+/* Nested Column Classes */
+.column.alpha, .columns.alpha               { margin-left: 0; }
+.column.omega, .columns.omega               { margin-right: 0; }
+/* Base Grid */
+.container .one.column                      { width: 40px;  }
+.container .two.columns                     { width: 100px; }
+.container .three.columns                   { width: 160px; }
+.container .four.columns                    { width: 220px; }
+.container .five.columns                    { width: 280px; }
+.container .six.columns                     { width: 340px; }
+.container .seven.columns                   { width: 400px; }
+.container .eight.columns                   { width: 460px; }
+.container .nine.columns                    { width: 520px; }
+.container .ten.columns                     { width: 580px; }
+.container .eleven.columns                  { width: 640px; }
+.container .twelve.columns                  { width: 700px; }
+.container .thirteen.columns                { width: 760px; }
+.container .fourteen.columns                { width: 820px; }
+.container .fifteen.columns                 { width: 880px; }
+.container .sixteen.columns                 { width: 940px; }
+.container .one-third.column                { width: 300px; }
+.container .two-thirds.column               { width: 620px; }
+/* Offsets */
+.container .offset-by-one                   { padding-left: 60px;  }
+.container .offset-by-two                   { padding-left: 120px; }
+.container .offset-by-three                 { padding-left: 180px; }
+.container .offset-by-four                  { padding-left: 240px; }
+.container .offset-by-five                  { padding-left: 300px; }
+.container .offset-by-six                   { padding-left: 360px; }
+.container .offset-by-seven                 { padding-left: 420px; }
+.container .offset-by-eight                 { padding-left: 480px; }
+.container .offset-by-nine                  { padding-left: 540px; }
+.container .offset-by-ten                   { padding-left: 600px; }
+.container .offset-by-eleven                { padding-left: 660px; }
+.container .offset-by-twelve                { padding-left: 720px; }
+.container .offset-by-thirteen              { padding-left: 780px; }
+.container .offset-by-fourteen              { padding-left: 840px; }
+.container .offset-by-fifteen               { padding-left: 900px; }
+/* #Tablet (Portrait)
+================================================== */
+/* Note: Design for a width of 768px */
+@media only screen and (min-width: 768px) and (max-width: 959px) {
+    .container                                  { width: 768px; }
+    .container .column,
+    .container .columns                         { margin-left: 10px; margin-right: 10px;  }
+    .column.alpha, .columns.alpha               { margin-left: 0; margin-right: 10px; }
+    .column.omega, .columns.omega               { margin-right: 0; margin-left: 10px; }
+    .container .one.column                      { width: 28px; }
+    .container .two.columns                     { width: 76px; }
+    .container .three.columns                   { width: 124px; }
+    .container .four.columns                    { width: 172px; }
+    .container .five.columns                    { width: 220px; }
+    .container .six.columns                     { width: 268px; }
+    .container .seven.columns                   { width: 316px; }
+    .container .eight.columns                   { width: 364px; }
+    .container .nine.columns                    { width: 412px; }
+    .container .ten.columns                     { width: 460px; }
+    .container .eleven.columns                  { width: 508px; }
+    .container .twelve.columns                  { width: 556px; }
+    .container .thirteen.columns                { width: 604px; }
+    .container .fourteen.columns                { width: 652px; }
+    .container .fifteen.columns                 { width: 700px; }
+    .container .sixteen.columns                 { width: 748px; }
+    .container .one-third.column                { width: 236px; }
+    .container .two-thirds.column               { width: 492px; }
+    /* Offsets */
+    .container .offset-by-one                   { padding-left: 48px; }
+    .container .offset-by-two                   { padding-left: 96px; }
+    .container .offset-by-three                 { padding-left: 144px; }
+    .container .offset-by-four                  { padding-left: 192px; }
+    .container .offset-by-five                  { padding-left: 240px; }
+    .container .offset-by-six                   { padding-left: 288px; }
+    .container .offset-by-seven                 { padding-left: 336px; }
+    .container .offset-by-eight                 { padding-left: 348px; }
+    .container .offset-by-nine                  { padding-left: 432px; }
+    .container .offset-by-ten                   { padding-left: 480px; }
+    .container .offset-by-eleven                { padding-left: 528px; }
+    .container .offset-by-twelve                { padding-left: 576px; }
+    .container .offset-by-thirteen              { padding-left: 624px; }
+    .container .offset-by-fourteen              { padding-left: 672px; }
+    .container .offset-by-fifteen               { padding-left: 720px; }
+}
+/*  #Mobile (Portrait) */ /* Note: Design for a width of 320px */
+@media only screen and (max-width: 767px) {
+    .container { width: 300px; }
+    .columns, .column { margin: 0; }
+    .container .one.column,
+    .container .two.columns,
+    .container .three.columns,
+    .container .four.columns,
+    .container .five.columns,
+    .container .six.columns,
+    .container .seven.columns,
+    .container .eight.columns,
+    .container .nine.columns,
+    .container .ten.columns,
+    .container .eleven.columns,
+    .container .twelve.columns,
+    .container .thirteen.columns,
+    .container .fourteen.columns,
+    .container .fifteen.columns,
+    .container .sixteen.columns,
+    .container .one-third.column,
+    .container .two-thirds.column,
+    #nav-logo,
+    #copyright{ width: 300px; }
+    /* Offsets */
+    .container .offset-by-one,
+    .container .offset-by-two,
+    .container .offset-by-three,
+    .container .offset-by-four,
+    .container .offset-by-five,
+    .container .offset-by-six,
+    .container .offset-by-seven,
+    .container .offset-by-eight,
+    .container .offset-by-nine,
+    .container .offset-by-ten,
+    .container .offset-by-eleven,
+    .container .offset-by-twelve,
+    .container .offset-by-thirteen,
+    .container .offset-by-fourteen,
+    .container .offset-by-fifteen { padding-left: 0; }
+    /* header */
+    #nav-logo { float: none; }
+    #navigation{ display: none; }
+    /* footer */
+    footer { margin-top: 40px; }
+}
+/* #Mobile (Landscape) */
+/* Note: Design for a width of 480px */
+@media only screen and (min-width: 480px) and (max-width: 767px) {
+    .container { width: 420px; }
+    .columns, .column { margin: 0; }
+    .container .one.column,
+    .container .two.columns,
+    .container .three.columns,
+    .container .four.columns,
+    .container .five.columns,
+    .container .six.columns,
+    .container .seven.columns,
+    .container .eight.columns,
+    .container .nine.columns,
+    .container .ten.columns,
+    .container .eleven.columns,
+    .container .twelve.columns,
+    .container .thirteen.columns,
+    .container .fourteen.columns,
+    .container .fifteen.columns,
+    .container .sixteen.columns,
+    .container .one-third.column,
+    .container .two-thirds.column,
+    #nav-logo,
+    #copyright{ width: 420px; }
+    /* header */
+    #nav-logo { float: none; }
+}
+/* #Clearing */
+
+/* Self Clearing Goodness */
+.container:after { content: "\0020"; display: block; height: 0; clear: both; visibility: hidden; }
+
+/* Use clearfix class on parent to clear nested columns, or wrap each row of columns in a <div class="row"> */
+.clearfix:before,.clearfix:after,.row:before,.row:after {content: '\0020';display: block;overflow: hidden;visibility: hidden;width: 0;height: 0; }
+.row:after,.clearfix:after {clear: both; }
+.row,.clearfix {zoom: 1; }
+
+/* You can also use a <br class="clear" /> to clear columns */
+.clear {clear: both;display: block;overflow: hidden;visibility: hidden;width: 0;height: 0;}
+
+/* Columns for better content separation */
+
+/* Columns */
+.one_half { width: 48%; }
+.one_third { width: 30.66%; }
+.two_third { width: 65.33%; }
+.one_fourth { width: 22%; }
+.three_fourth { width: 74%; }
+.one_fifth { width: 16.8%; }
+.two_fifth { width: 37.6%; }
+.three_fifth { width: 58.4%; }
+.four_fifth { width: 67.2%; }
+.one_sixth { width: 13.33%; }
+.five_sixth { width: 82.67%; }
+.one_half,.one_third,.two_third,.three_fourth,.one_fourth,.one_fifth,.two_fifth,.three_fifth,.four_fifth,.one_sixth,.five_sixth {position: relative;margin-right: 4%;margin-bottom: 20px;float: left;}
+.column-last {margin-right: 0!important;clear: right;}
+
+/* 01.  02. basix heading color */
+.base.container h1,.base.container h2,.base.container h3,.base.container h4,.base.container h5{color: @color-dark;}
+.base.container h1 a:hover,.base.container h2 a:hover,.base.container h3 a:hover,.base.container h4 a:hover,.base.container h5 a:hover,#copyright a:hover{color: @color-shine;}
+
+/* 01.  03. line color */
+header{border:none;}
+footer{font-size: 1em;color: @color-dark;}
+footer a,footer a:hover{color:@color-dark;text-decoration: none;}
+#copyright{padding:20px 0 0;}
+h1, h2, h3, h4, h5, h6{ font-weight: normal; font-family: @font-prime; }
+::selection { background: none repeat scroll 0 0 @color-bright; color: @color-light; }
+*::-moz-selection { background: none repeat scroll 0 0 @color-bright; color: @color-light; }
+::-webkit-selection { background: none repeat scroll 0 0 @color-bright; color: @color-light; }
+.highlight{color:@color-error;}
+#nav-logo{font-family:@font-prime;font-weight:bold;}
+.box{-moz-box-shadow: inset 0 1px 2px 1px @color-shadow;-webkit-box-shadow: inset 0 1px 2px 1px @color-shadow;border-bottom: 1px solid @color-shadow;border-left: 1px solid @color-shadow;border-right: 1px solid @color-shadow;border-top: 1px solid @color-shadow;box-shadow: inset 0 1px 1px 1px @color-light;-moz-border-radius:5px;border-radius:5px;}
+#signup{background:@color-bright;background: url(../images/dashes-bg.png) @color-bright;-moz-border-radius:5px;border-radius:5px;}
+#signup p{font-size:1.2em;}
+#signup,#signup h2{color:@color-dark;}
+#signuperror{display:none;}
+.inner{padding:20px;text-align: center;}
+.inner h2{padding-bottom:20px;}
+.field{color: @color-dark;font-family: @font-base;font-size: 1em;padding: 7px;background-color: @color-light;}
+#subbox {background: url(../images/email-icon.png) no-repeat 12px 10px @color-light;padding: 7px 7px 7px 40px;width: 56%;text-transform: uppercase;}
+#signup-button {background: url(../images/email-button.png) no-repeat !important;font-size: 0;height: 28px;margin: 0 0 0 15px;line-height: 0;text-indent: -9999px;width: 26px;border:none;}
+.list{margin-bottom:25px;}
+.list li{padding-bottom:5px;}
+
+/*  10. Contact */
+#contact-form ul { margin: 0 0 0 3px; }
+.contactform{overflow: hidden;width: 100%;text-align: left;}
+.contactform li {list-style-type: none;margin-bottom: 0px;}
+.contactform li label {display: block;margin-bottom: 5px;}
+.contactform li input[type="text"] {width: 94%;}
+.contactform li textarea {width: 94%;height: 150px;}
+.contactform li input,.contactform li textarea{margin-bottom:5px;}
+.contactform .button{font-weight:bold;background: @color-shine;font-size:1.2em;-moz-border-radius:5px;border-radius:5px;font-style: 1em;border: none;cursor: pointer;border-bottom: 1px solid @color-shadow;border-right: 1px solid @color-shadow;}
+.error {color: @color-error;font-size: 1em;font-weight:bold;padding-bottom:15px;display:block;}
